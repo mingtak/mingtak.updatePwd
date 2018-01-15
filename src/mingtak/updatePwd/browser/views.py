@@ -35,6 +35,7 @@ class UpdatePassword(form.SchemaForm):
     def handleApply(self, action):
         request = self.request
         response = request.response
+        portal = api.portal.get()
         data, errors = self.extractData()
         if errors:
             self.status = self.formErrorsMessage
@@ -51,7 +52,7 @@ class UpdatePassword(form.SchemaForm):
             message = _(u"User not found!")
             mType = 'warning'
 
-        response.redirect('/@@update_password')
+        response.redirect('%s/@@update_password' % portal.absolute_url())
         api.portal.show_message(message=message, request=request, type=mType)
         return
 
@@ -60,7 +61,8 @@ class UpdatePassword(form.SchemaForm):
 
         request = self.request
         response = request.response
-        response.redirect('/@@update_password')
+        portal = api.portal.get()
+        response.redirect('%s/@@update_password' % portal.absolute_url())
         message = _(u"Cancel this action!")
         api.portal.show_message(message=message, request=request, type='info')
         return
