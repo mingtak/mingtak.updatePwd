@@ -11,6 +11,59 @@ from z3c.form import button
 from Products.statusmessages.interfaces import IStatusMessage
 
 
+class IUpdatePasswordSelf(form.Schema):
+
+    newPassword = schema.TextLine(
+        title=_(u"New Password"),
+    )
+
+
+class UpdatePasswordSelf(form.SchemaForm):
+
+    schema = IUpdatePasswordSelf
+    ignoreContext = True
+
+    label = _(u"Update Password")
+    description = _(u"Please new password, update it.")
+
+
+    @button.buttonAndHandler(_(u'Setup'))
+    def handleApply(self, action):
+        request = self.request
+        response = request.response
+        portal = api.portal.get()
+        data, errors = self.extractData()
+        if errors:
+            self.status = self.formErrorsMessage
+            return
+
+        newPassword = self.request.form['form.widgets.newPassword']
+        user = api.user.get_current()
+        accountid = user.id
+        if user:
+            user.setSecurityProfile(password=newPassword)
+            message = _(u"Already update password!")
+            mType = 'info'
+        else:
+            message = _(u"User not found!")
+            mType = 'warning'
+
+        response.redirect(portal.absolute_url())
+        api.portal.show_message(message=message, request=request, type=mType)
+        return
+
+    @button.buttonAndHandler(_(u"Cancel"))
+    def handleCancel(self, action):
+
+        request = self.request
+        response = request.response
+        portal = api.portal.get()
+        response.redirect(portal.absolute_url())
+        message = _(u"Cancel this action!")
+        api.portal.show_message(message=message, request=request, type='info')
+        return
+
+
 class IUpdatePassword(form.Schema):
 
     accountId = schema.TextLine(

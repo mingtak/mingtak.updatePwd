@@ -14,4 +14,19 @@
    <property name="visible">True</property>
   </object>
  </object>
+
+ <object name="user" meta_type="CMF Action Category">
+  <object name="UpdatePasswordSelf" meta_type="CMF Action" i18n:domain="mingtak.updatePwd" insert-before="logout">
+   <property name="title" i18n:translate="">Update Password Self</property>
+   <property name="description" i18n:translate="">Update password Self</property>
+   <property name="url_expr">string:${portal_url}/@@update_password_self</property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions">
+    <element value="Set own password"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+ </object>
+
 </object>

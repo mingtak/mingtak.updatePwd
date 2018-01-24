@@ -26,4 +26,11 @@
       class=".views.UpdatePassword"
       />
 
+  <browser:page
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      name="update_password_self"
+      permission="zope2.View"
+      class=".views.UpdatePasswordSelf"
+      />
+
 </configure>
