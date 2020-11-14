@@ -14,8 +14,8 @@ long_description = '\n\n'.join([
 
 setup(
     name='mingtak.updatePwd',
-    version='1.0a1',
-    description="Update Password for plone",
+    version='2.0',
+    description="Update Password for plone. Plone5.2/python3.8 fit.",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
