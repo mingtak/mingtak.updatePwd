@@ -43,12 +43,10 @@ class UpdatePasswordSelf(BrowserView):
         newPassword = self.request.form['newPassword']
         newPassword2 = self.request.form['newPassword2']
 
-        import pdb; pdb.set_trace()
-        if newPassword != newPassword2 or len(newPassword) <= 5:
+        if newPassword != newPassword2 or len(newPassword) < 5:
             return False
 
         user = api.user.get_current()
-        accountid = user.id
         if user:
             user.setSecurityProfile(password=newPassword)
             return True
@@ -83,17 +81,15 @@ class UpdatePassword(BrowserView):
             response.redirect(portal.absolute_url())
             return
 
-        accountId = self.request.form['accountId']
         newPassword = self.request.form['newPassword']
-        user = api.user.get(username=accountId)
+        newPassword2 = self.request.form['newPassword2']
+
+        if newPassword != newPassword2 or len(newPassword) < 5:
+            return False
+
+        userid = request.form.get('userid')
+        user = api.user.get(userid=userid)
         if user:
             user.setSecurityProfile(password=newPassword)
-            message = _(u"Already update password!")
-            mType = 'info'
-        else:
-            message = _(u"User not found!")
-            mType = 'warning'
-
-        response.redirect('%s/%s' % (portal.absolute_url(), self.__name__))
-        api.portal.show_message(message=message, request=request, type=mType)
-        return
+            return True
+        return False
