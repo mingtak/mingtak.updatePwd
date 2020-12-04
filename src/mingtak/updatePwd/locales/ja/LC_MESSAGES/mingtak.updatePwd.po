@@ -16,72 +16,72 @@ msgstr ""
 
 #: ./configure.zcml:21
 msgid "Installs the mingtak.updatePwd add-on."
-msgstr ""
+msgstr "Installs the mingtak.updatePwd add-on."
 
 #: ./configure.zcml:30
 msgid "Uninstalls the mingtak.updatePwd add-on."
-msgstr ""
+msgstr "Uninstalls the mingtak.updatePwd add-on."
 
 #: ./profiles/default/actions.xml
 msgid "Update Password"
-msgstr "變更密碼"
+msgstr "パスワード変更(全員)"
 
 #: ./profiles/default/actions.xml
 msgid "Update Password Self"
-msgstr "自己更新密碼"
+msgstr "パスワード変更(自分)"
 
 #: ./profiles/default/actions.xml
 msgid "Update password"
-msgstr "變更密碼"
+msgstr "パスワード変更(全員)"
 
 #: ./profiles/default/actions.xml
 msgid "Update password Self"
-msgstr "自己更新密碼"
+msgstr "パスワード変更(自分)"
 
 #: ./configure.zcml:21
 msgid "mingtak.updatePwd"
-msgstr ""
+msgstr "mingtak.updatePwd"
 
 #: ./configure.zcml:30
 msgid "mingtak.updatePwd (uninstall)"
-msgstr ""
+msgstr "mingtak.updatePwd (uninstall)"
 
 #: ./browser/templates/update_password.pt:30
 #: ./browser/templates/update_password_self.pt:26
 msgid "再確認一次："
-msgstr ""
+msgstr "新しいパスワード(確認)"
 
 #: ./browser/views.py:29
 msgid "密碼更新失敗，請重新輸入"
-msgstr ""
+msgstr "パスワードの変更に失敗しました。もう一度入力してください。"
 
 #: ./browser/views.py:26
 msgid "密碼更新成功"
-msgstr ""
+msgstr "パスワードを変更しました。"
 
 #: ./browser/templates/update_password.pt:19
 msgid "密碼請至少輸入5碼"
-msgstr ""
+msgstr "パスワードの長さは５文字以上。"
 
 #: ./browser/templates/update_password.pt:36
 #: ./browser/templates/update_password_self.pt:32
 msgid "更新"
-msgstr ""
+msgstr "更新"
 
 #: ./browser/templates/update_password.pt:16
 #: ./browser/templates/update_password_self.pt:16
 msgid "更新密碼"
-msgstr ""
+msgstr "パスワード変更入力"
 
 #: ./browser/templates/update_password_self.pt:19
 msgid "請至少輸入5碼"
-msgstr ""
+msgstr "長さは５文字以上"
 
 #: ./browser/templates/update_password.pt:23
 msgid "請輸入帳號："
-msgstr ""
+msgstr "アカウント名"
 
 #: ./browser/templates/update_password.pt:27
 #: ./browser/templates/update_password_self.pt:23
 msgid "輸入新密碼："
-msgstr ""
+msgstr "新しいパスワード"
