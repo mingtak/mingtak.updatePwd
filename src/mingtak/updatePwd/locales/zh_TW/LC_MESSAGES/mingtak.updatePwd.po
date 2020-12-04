@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-12-04 01:33+0000\n"
+"POT-Creation-Date: 2020-12-04 02:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,10 +46,42 @@ msgstr ""
 msgid "mingtak.updatePwd (uninstall)"
 msgstr ""
 
+#: ./browser/templates/update_password.pt:30
+#: ./browser/templates/update_password_self.pt:26
+msgid "再確認一次："
+msgstr ""
+
 #: ./browser/views.py:29
 msgid "密碼更新失敗，請重新輸入"
 msgstr ""
 
 #: ./browser/views.py:26
 msgid "密碼更新成功"
+msgstr ""
+
+#: ./browser/templates/update_password.pt:19
+msgid "密碼請至少輸入5碼"
+msgstr ""
+
+#: ./browser/templates/update_password.pt:36
+#: ./browser/templates/update_password_self.pt:32
+msgid "更新"
+msgstr ""
+
+#: ./browser/templates/update_password.pt:16
+#: ./browser/templates/update_password_self.pt:16
+msgid "更新密碼"
+msgstr ""
+
+#: ./browser/templates/update_password_self.pt:19
+msgid "請至少輸入5碼"
+msgstr ""
+
+#: ./browser/templates/update_password.pt:23
+msgid "請輸入帳號："
+msgstr ""
+
+#: ./browser/templates/update_password.pt:27
+#: ./browser/templates/update_password_self.pt:23
+msgid "輸入新密碼："
 msgstr ""
