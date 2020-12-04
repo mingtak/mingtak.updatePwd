@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-01-24 02:17+0000\n"
+"POT-Creation-Date: 2020-12-04 01:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,47 +14,14 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./browser/views.py:70
-msgid "Account Id"
-msgstr "帳號"
-
-#: ./browser/views.py:45
-msgid "Already update password!"
-msgstr "密碼更新完成"
-
-#: ./browser/views.py:55
-msgid "Cancel"
-msgstr "取消"
-
-#: ./browser/views.py:62
-msgid "Cancel this action!"
-msgstr "取消動作"
-
 #: ./configure.zcml:21
 msgid "Installs the mingtak.updatePwd add-on."
 msgstr "安裝mingtak.updatePwd"
-
-#: ./browser/views.py:17
-msgid "New Password"
-msgstr "新密碼"
-
-#: ./browser/views.py:84
-msgid "Please input account id and password, update it."
-msgstr "請輸入帳號及密碼，並更新"
-
-#: ./browser/views.py:27
-msgid "Please new password, update it."
-msgstr "請輸入新密碼，並更新"
-
-#: ./browser/views.py:30
-msgid "Setup"
-msgstr "設定"
 
 #: ./configure.zcml:30
 msgid "Uninstalls the mingtak.updatePwd add-on."
 msgstr ""
 
-#: ./browser/views.py:26
 #: ./profiles/default/actions.xml
 msgid "Update Password"
 msgstr "變更密碼"
@@ -71,14 +38,18 @@ msgstr "變更密碼"
 msgid "Update password Self"
 msgstr "自己更新密碼"
 
-#: ./browser/views.py:48
-msgid "User not found!"
-msgstr "沒有這個帳號"
-
 #: ./configure.zcml:21
 msgid "mingtak.updatePwd"
 msgstr ""
 
 #: ./configure.zcml:30
 msgid "mingtak.updatePwd (uninstall)"
+msgstr ""
+
+#: ./browser/views.py:29
+msgid "密碼更新失敗，請重新輸入"
+msgstr ""
+
+#: ./browser/views.py:26
+msgid "密碼更新成功"
 msgstr ""
